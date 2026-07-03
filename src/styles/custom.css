@@ -1,0 +1,150 @@
+:root {
+  --primary: #7c3aed;
+  --secondary: #4f46e5;
+  --dark-bg: #0f172a;
+  --card-bg: #1e293b;
+  --sidebar-bg: #111827;
+  --text-color: #f8fafc;
+}
+
+body {
+  background: var(--dark-bg);
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    180deg,
+    #581c87,
+    #7c3aed,
+    #4f46e5
+  );
+
+  color: white;
+}
+.sidebar .active-link {
+  background: rgba(255,255,255,0.15);
+  border-left: 4px solid #67e8f9;
+}
+/* Navbar */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    #312e81,
+    #4f46e5
+  ) !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Cards */
+.stat-card {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h2 {
+  color: #a78bfa;
+  font-weight: bold;
+}
+
+/* Recent Tasks */
+.task-table {
+  background: var(--card-bg);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.table-dark {
+  background: transparent;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #4f46e5
+  );
+  border: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Login/Register Cards */
+.card {
+  border: none !important;
+  border-radius: 20px !important;
+  background: #1e293b !important;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.form-control {
+  background: #334155;
+  border: none;
+  color: white;
+}
+
+.form-control:focus {
+  background: #475569;
+  color: white;
+  box-shadow: 0 0 0 0.2rem rgba(124,58,237,.3);
+}
+/* DARK THEME */
+
+.dark-theme {
+  background-color: #0f172a;
+  color: white;
+}
+
+/* LIGHT THEME */
+
+.light-theme {
+  background-color: #f8fafc;
+  color: #111827;
+}
+.dark-theme .card {
+  background: #1e293b !important;
+  color: white !important;
+}
+
+.light-theme .card {
+  background: white !important;
+  color: black !important;
+}
+
+.dark-theme .sidebar {
+  background: linear-gradient(
+    180deg,
+    #111827,
+    #1e1b4b
+  );
+}
+
+
+.light-theme .sidebar a {
+  color: #111827;
+}
+
+.dark-theme .sidebar a {
+  color: white;
+}
