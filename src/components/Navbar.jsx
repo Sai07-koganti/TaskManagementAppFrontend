@@ -8,7 +8,7 @@ import { useUser } from "../context/UserContext";
 function Navbar() {
 
   const navigate = useNavigate();
-  const { user, setUser} = useUser();
+  const { user } = useUser();
   
   const logout = () => {
     if (!window.confirm("Are you sure you want to logout?"))
